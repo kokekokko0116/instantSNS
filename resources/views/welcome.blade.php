@@ -74,6 +74,7 @@
         }
 
         .form input {
+            border: 1px solid #545960;
             width: 80%;
             height: 40px;
             border-radius: 8px;
