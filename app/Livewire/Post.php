@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use App\Models\Post as PostModel;
 
 class Post extends Component
 {
@@ -10,14 +11,14 @@ class Post extends Component
 
     public function create()
     {
-        \App\Models\Post::create([
+        PostModel::create([
             'content' => $this->text,
         ]);
     }
     public function render()
     {
         return view('livewire.post', [
-            'posts' => \App\Models\Post::all()->sortByDesc('created_at'),
+            'posts' => PostModel::all()->sortByDesc('created_at'),
         ]);
     }
 }
