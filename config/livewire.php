@@ -40,6 +40,9 @@ return [
 
     'layout' => 'components.layouts.app',
 
+    'asset_url' => env('ASSET_URL', null),
+
+    'app_url' => null,
 
     /*
     |---------------------------------------------------------------------------
