@@ -1,5 +1,5 @@
-<div wire:poll.2.5s>
-    <div class="view">
+<div>
+    <div class="view" wire:poll.2.5s>
         @foreach ($posts as $post)
             <div class="item">
                 <div>{{ $post->content }}</div>
