@@ -105,9 +105,7 @@
 </head>
 
 <body class="antialiased">
-    @livewireStyles
     <livewire:post />
-    @livewireScripts
 </body>
 
 </html>

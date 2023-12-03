@@ -10,6 +10,7 @@
 
     <div class="form">
         <form wire:submit.prevent="create">
+            @csrf
             <input type="text" wire:model="text">
             <button type="submit">投稿</button>
         </form>
